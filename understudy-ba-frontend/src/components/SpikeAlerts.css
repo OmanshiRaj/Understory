@@ -1,0 +1,83 @@
+.spikes {
+  flex: 1;
+  min-width: 0;
+}
+
+.spikes__heading {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0 0 12px 0;
+}
+
+.spikes__empty {
+  font-size: 0.85rem;
+  color: #a0aec0;
+  font-style: italic;
+  text-align: center;
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.spikes__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.spike-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border: 1px solid #fed7d7;
+  border-left: 4px solid #e53e3e;
+  border-radius: 8px;
+  padding: 12px 16px;
+  box-shadow: 0 2px 8px rgba(229, 62, 62, 0.08);
+  transition: box-shadow 0.15s, transform 0.15s;
+}
+
+.spike-card:hover {
+  box-shadow: 0 4px 14px rgba(229, 62, 62, 0.14);
+  transform: translateY(-1px);
+}
+
+.spike-card__left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.spike-card__name {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #1a202c;
+}
+
+.spike-card__counts {
+  font-size: 0.78rem;
+  color: #718096;
+}
+
+.spike-card__tag {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  flex-shrink: 0;
+}
+
+.spike-card__tag--new {
+  background: #fefcbf;
+  color: #975a16;
+}
+
+.spike-card__tag--spiking {
+  background: #fed7d7;
+  color: #c53030;
+}

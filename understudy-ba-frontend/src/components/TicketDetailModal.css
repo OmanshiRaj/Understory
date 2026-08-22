@@ -1,0 +1,142 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.modal__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px 24px 12px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.modal__title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.modal__close {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: var(--color-text-light);
+  cursor: pointer;
+  padding: 0 4px;
+}
+
+.modal__close:hover {
+  color: var(--color-text);
+}
+
+.modal__body {
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal__field {
+  display: flex;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--color-text);
+}
+
+.modal__label {
+  font-weight: 600;
+  color: var(--color-text-light);
+  flex-shrink: 0;
+}
+
+.modal__status {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 0.78rem;
+  padding: 1px 8px;
+  border-radius: 10px;
+}
+
+.modal__status--pending {
+  background: #fefcbf;
+  color: #975a16;
+}
+
+.modal__status--approved {
+  background: #c6f6d5;
+  color: #276749;
+}
+
+.modal__status--rejected {
+  background: #fed7d7;
+  color: #c53030;
+}
+
+.modal__description {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.85rem;
+  color: var(--color-text);
+}
+
+.modal__description p {
+  line-height: 1.6;
+}
+
+.modal__error {
+  font-size: 0.82rem;
+  color: var(--color-spike-red);
+  background: #fff5f5;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.modal__actions {
+ display: flex;
+  gap: 10px;
+  padding: 12px 24px 20px;
+  justify-content: flex-end;
+}
+
+.modal__btn {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.modal__btn--approve {
+  background: var(--color-positive);
+  color: #fff;
+}
+
+.modal__btn--approve:hover {
+  background: #38a169;
+}
+
+.modal__btn--reject {
+  background: var(--color-negative);
+  color: #fff;
+}
+
+.modal__btn--reject:hover {
+  background: #e53e3e;
+}

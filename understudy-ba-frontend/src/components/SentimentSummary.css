@@ -1,0 +1,72 @@
+.sentiment {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px 20px;
+  border: 1px solid #e2e8f0;
+}
+
+.sentiment__heading {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0 0 12px 0;
+}
+
+.sentiment__bar-track {
+  display: flex;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #edf2f7;
+  margin-bottom: 12px;
+}
+
+.sentiment__bar {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.sentiment__bar--pos {
+  background: #48bb78;
+}
+
+.sentiment__bar--neg {
+  background: #fc8181;
+}
+
+.sentiment__bar--neu {
+  background: #a0aec0;
+}
+
+.sentiment__counts {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.sentiment__stat {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  color: #4a5568;
+}
+
+.sentiment__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.sentiment__dot--pos {
+  background: #48bb78;
+}
+
+.sentiment__dot--neg {
+  background: #fc8181;
+}
+
+.sentiment__dot--neu {
+  background: #a0aec0;
+}
